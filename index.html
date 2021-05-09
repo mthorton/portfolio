@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Maxwell Horton</title>
+</head>
+
+<body>
+    <div id="top-jump"></div>
+    <nav>
+        <ul class="nav justify-content-center nav-fill">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#top-jump">Top of Page</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about-me-jump">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio-jump">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact-jump">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#resume-jump">Resume</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Maxwell Horton</h1>
+    </header>
+    <main>
+        <div class="about-me container" id="about-me-jump">
+            <div class="row">
+                <h3>About Me</h3>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <img src="assets/maxColorCrop.png" alt="Maxwell Horton" class="about-me-pic">
+                </div>
+                <div class="col-6">
+                    <h5 class="about-me-p">
+                        I have always had an interest in technology, but it was my first courses in web development that made me
+                        realize the passion I have for building websites. For the first time in my life, I find myself excited
+                        for class and material I am learning. I can barely wait to start a career in web development, and I look
+                        forward to working with a company that will help me achieve my goals.
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="skills-container container" id="skills-jump">
+            <div class="row">
+                <h3>Skills</h3>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="assets/html144.png" alt="html">
+                </div>
+                <div class="col">
+                    <img src="assets/css144.png" alt="html">
+                </div>
+                <div class="col">
+                    <img src="assets/js144.png" alt="html">
+                </div>
+                <div class="col">
+                    <img src="assets/python144.png" alt="html">
+                </div>
+                <div class="col">
+                    <img src="assets/vs144.png" alt="html">
+                </div>
+            </div>
+            <div class="skills-icon-link row">
+                <a href="https://icons8.com/">Icons from icons8</a>
+            </div>
+        </div>
+    </main>
+    <div class="projects-container container" id="portfolio-jump">
+        <div class="row">
+            <h3>Projects</h3>
+        </div>
+        <div class="row row-cols-3">
+            <div class="col">
+                <h4>Static Layout</h4>
+                <a href="https://mthorton.github.io/static_layout_efa/"><img src="assets/staticWebsite.PNG"
+                        class="port-img" alt=""></a>
+            </div>
+            <div class="col">
+                <h4>CSS Creature</h4>
+                <a href="https://codepen.io/mthorton/pen/oNBbzwo?editors=1100"><img src="assets/cssCreature.PNG"
+                        class="port-img" alt=""></a>
+            </div>
+            <div class="col">
+                <h4>API Project 1</h4>
+                <a href="https://mthorton.github.io/api_challenge_efa/"><img src="assets/apiChallenge1.PNG"
+                        class="port-img" alt=""></a>
+            </div>
+        </div>
+        <div class="row row-cols-3 secondRow">
+            <div class="col">
+                <h4>API Project 2</h4>
+                <a href="https://mthorton.github.io/api_challenge_2/"><img src="assets/apiChallenge2.PNG"
+                        class="port-img" alt=""></a>
+            </div>
+            <div class="col">
+                <h4>Blue Badge TBA</h4>
+                <img src="assets/blueBadge.PNG" class="port-img" alt="">
+            </div>
+            <div class="col">
+                <h4>Red Badge TBA</h4>
+                <img src="assets/redBadge.PNG" class="port-img" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="contact-container" id="contact-jump">
+        <div>
+            <h3>Contact</h3>
+        </div>
+        <section id="contact" class="container">
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xqkwkrbv"
+                method="post">
+                <fieldset id="fs-frm-inputs">
+                    <div class="row align-content-center full-name-container">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                    </div>
+                    <div class="row align-content-center email-container">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                    </div>
+                    <div class="row align-content-center message-container">
+                        <label for="message">Message</label>
+                        <textarea rows="5" name="message" id="message" placeholder="Write message here" required=""></textarea>
+                    </div>
+    
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+    
+                <input type="submit" value="Submit" class="contact-submit">
+    
+            </form>
+        </section>
+    </div>
+    
+    <footer class="footer-wrapper">
+        <div class="footer-bar" id="resume-jump">
+            <div class="row row-cols-3">
+                <div class="col">
+                    <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/maxwell-horton-55125452/"><img src="assets/linkedin.svg" alt="html"></a>
+                </div>
+                <div class="col">
+                    <h4>Github</h4>
+                    <a href="https://github.com/mthorton"><img src="assets/github.svg" alt="html"></a>
+                </div>
+                <div class="col">
+                    <h4>Resume</h4>
+                    <a href="assets/Resume 2021 Horton.pdf"><img src="assets/resumeIcon.svg" alt="html"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
